@@ -108,9 +108,9 @@ streamlit run app1.py
 
 ## Example Queries
 
--"Find recent papers about transformer architectures in NLP"
--"What methodology was used in the paper 'Attention is All You Need'?"
--"What are emerging trends in reinforcement learning?"
+- "Find recent papers about transformer architectures in NLP"
+- "What methodology was used in the paper 'Attention is All You Need'?"
+- "What are emerging trends in reinforcement learning?"
 
 ## Project Structure
 
@@ -121,6 +121,11 @@ Academic-Research-Assistant/
 │   ├── future_works_agent.py  # Future works analysis agent
 │   ├── qa_agent.py        # Question answering agent
 │   └── search_agent.py    # Research paper search agent
+├── local_implement_ollama/ # Local Ollama implementation
+│   ├── agents/        #  Local agents implementation
+│   ├── app_ollama.py      # Modified Streamlit application
+│   ├── config.py          # Local configuration settings
+│   └── master.py          # Modified master controller
 ├── master.py              # Main controller and routing logic
 ├── config.py             # Configuration settings
 ├── app1.py              # Streamlit interface
