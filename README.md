@@ -57,6 +57,40 @@ pip install -r requirements.txt
 GOOGLE_API_KEY=your_gemini_api_key
 ```
 
+## Local Ollama Implementation
+
+In addition to the main multi-agent system, the project also includes a local Ollama implementation within the `local_implement_ollama` folder. This local implementation provides the following capabilities:
+
+### Local Application
+The `app_ollama.py` file is a modified version of the main Streamlit application, specifically designed for the local Ollama implementation.
+
+### Local Configuration
+The `config.py` file within the `local_implement_ollama` folder contains settings and configurations specific to the local Ollama deployment.
+
+Other files are also modified accordingly to run locally.
+
+
+### Running the Local Ollama Implementation
+To run the local Ollama implementation, use the following command:
+
+```bash
+# Step 1: Install Ollama CLI
+curl -sSL https://ollama.com/download.sh | sh
+
+# Step 2: Start the Ollama server
+ollama serve
+
+# Step 3: Pull a specific model
+ollama pull qwen2.5  # or replace llama2 with your desired model
+
+# Step 4: Verify installed models
+ollama models
+
+# Step 5: Run Streamlit app
+streamlit run local_implement_ollama/app_ollama.py
+```
+
+
 ## Usage
 
 1. Start the application:
